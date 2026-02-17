@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <FacialAnimation.MouthTypeDef>
+	  <defName>MouthNormal</defName>
+	  <texPath>Things/Pawn/FA-Experimentals/Mouth/Normal</texPath>
+	  <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+  
+  <FacialAnimation.MouthTypeDef>
+	  <defName>MouthNarrow</defName>
+	  <texPath>Things/Pawn/FA-Experimentals/Mouth/Narrow</texPath>
+	  <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+  
+  <FacialAnimation.MouthTypeDef>
+	  <defName>MouthGrumpy</defName>
+	  <texPath>Things/Pawn/FA-Experimentals/Mouth/Grumpy</texPath>
+	  <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+  
+  <FacialAnimation.MouthTypeDef>
+	  <defName>MouthSmiling</defName>
+	  <texPath>Things/Pawn/FA-Experimentals/Mouth/Smiling</texPath>
+	  <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+  
+  <FacialAnimation.MouthTypeDef>
+	  <defName>MouthImpish</defName>
+	  <texPath>Things/Pawn/FA-Experimentals/Mouth/Impish</texPath>
+	  <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+  
+</Defs>

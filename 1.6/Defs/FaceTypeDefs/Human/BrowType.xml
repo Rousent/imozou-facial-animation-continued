@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.BrowTypeDef>
+	  <defName>BrowNormal</defName>
+	  <texPath>Things/Pawn/FA-Experimentals/Brows/Normal</texPath>
+	  <shader>Map/Transparent</shader>
+  </FacialAnimation.BrowTypeDef>
+  
+    <FacialAnimation.BrowTypeDef>
+	  <defName>BrowThin</defName>
+	  <texPath>Things/Pawn/FA-Experimentals/Brows/Thin</texPath>
+	  <shader>Map/Transparent</shader>
+  </FacialAnimation.BrowTypeDef>
+</Defs>

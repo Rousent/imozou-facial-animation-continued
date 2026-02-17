@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  	<name>Facial Animation for Imozou Face (Continued)</name>
+  	<author>Tubbs, Rousent</author>
+  	<packageId>rousent.imozouanimatedcontinued</packageId>
+  	<url></url>
+  	<supportedVersions>
+		<li>1.6</li>
+  	</supportedVersions>
+  	<description>
+Animated version of the Imozou Face. Based in the original work of Tubbs and Sato Imozou.
+
+Tubb's Original Mod (Facial Animation for Imozou Face):
+https://steamcommunity.com/sharedfiles/filedetails/?id=2899534833
+
+Imozou's Original Face Replacement Mod:
+https://steamcommunity.com/sharedfiles/filedetails/?id=2645457078
+Make sure to check out their other mods!
+
+Important: This mod may be taken down per the original authors request.
+  	</description>
+	<modDependencies>
+		<li>
+			<packageId>Nals.FacialAnimation</packageId>
+			<displayName>[NL] Facial Animation - WIP</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=1635901197</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Nals.FacialAnimationExperimentals</packageId>
+			<displayName>[NL] Facial Animation - Experimentals</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2581693737</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Nals.FacialAnimation</li>
+		<li>Nals.FacialAnimationExperimentals</li>
+	</loadAfter>
+</ModMetaData>

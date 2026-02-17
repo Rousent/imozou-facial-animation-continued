@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/FacialAnimation.HeadTypeDef[
+      defName="HeadPointy" or
+	  defName="HeadSquare"]/.</xpath>
+  </Operation>
+  
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/FacialAnimation.EyeballTypeDef[
+      defName="EyeSanpaku"or
+      defName="EyeDragon"or
+	  defName="EyeDull"]/.</xpath>
+  </Operation>
+  
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/FacialAnimation.MouthTypeDef[
+      defName="MouthFang"]/.</xpath>
+  </Operation>
+  
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/FacialAnimation.BrowTypeDef[
+      defName="BrowThick"]/.</xpath>
+  </Operation>
+  
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/FacialAnimation.LidTypeDef[
+      defName="LidSharp" or
+	  defName="LidPointy" or
+	  defName="LidQuite" or
+    defName="LidGeek" or
+	  defName="LidSleepy"]/.</xpath>
+  </Operation>
+</Patch>

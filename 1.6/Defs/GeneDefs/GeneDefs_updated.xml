@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<GeneDef>
+    <defName>Furskin</defName>
+    <label>furskin</label>
+    <labelShortAdj>furskinned</labelShortAdj>
+    <description>Carriers of this gene grow thick fur all over their body, which protects them from cold temperatures.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>400</displayOrderInCategory>
+    <iconPath>UI/Icons/Genes/Gene_Furskin</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <forcedHeadTypes>
+      <li>Furskin_Average1</li>
+      <li>Furskin_Average2</li>
+      <li>Furskin_Average3</li>
+      <!--<li>Furskin_Narrow1</li>
+      <li>Furskin_Narrow2</li>
+      <li>Furskin_Narrow3</li> Removed because vanilla narrow heads were occasionally causing visual bugs with added textures. You won't notice the difference with [NL] Animation anyway. -->
+      <li>Furskin_Heavy1</li>
+      <li>Furskin_Heavy2</li>
+      <li>Furskin_Heavy3</li>
+      <li>Furskin_Gaunt</li>
+    </forcedHeadTypes>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>BeardLong</li>
+        <li>Furskin</li>
+      </tags>
+    </beardTagFilter>
+    <exclusionTags>
+      <li>HairStyle</li>
+      <li>Fur</li>
+    </exclusionTags>
+    <statOffsets>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+    </statOffsets>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <fur>Furskin</fur>
+    <skinIsHairColor>true</skinIsHairColor>
+    <tattoosVisible>false</tattoosVisible>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+	  <li>
+		<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Hair</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>false</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+		<texPath>Overlays/Furskin/furskin</texPath>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+		      <li>North</li>
+          <li>West</li>
+        </visibleFacing>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>51</layer>
+          </defaultData>
+		  <dataEast>
+            <layer>51</layer>
+          </dataEast>
+          <dataWest>
+            <layer>51</layer>
+          </dataWest>
+        </drawData>
+	  </li>
+    </renderNodeProperties>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneJawBase">
+    <defName>Head_Gaunt</defName>
+    <label>gaunt head</label>
+    <description>Carriers of this gene have a pinched, gaunt appearance in their face and head.</description>
+    <iconPath>UI/Icons/Genes/Gene_GauntHead</iconPath>
+    <forcedHeadTypes>
+      <li>Gaunt</li>
+      <li>Furskin_Gaunt</li>
+    </forcedHeadTypes>
+    <displayOrderInCategory>97</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>gaunt</symbol></li>
+        <li><symbol>skull</symbol></li>
+        <li><symbol>dead</symbol></li>
+        <li><symbol>bone</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Overlays/Gaunt/gaunt</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <useSkinShader>false</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <baseLayer>51</baseLayer>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneJawBase">
+    <defName>Jaw_Heavy</defName>
+    <label>heavy jaw</label>
+    <description>Carriers of this gene have large jaws.</description>
+    <iconPath>UI/Icons/Genes/Gene_JawHeavy</iconPath>
+    <forcedHeadTypes>
+      <li>Male_HeavyJawNormal</li>
+      <li>Female_HeavyJawNormal</li>
+      <li>Furskin_Heavy1</li>
+      <li>Furskin_Heavy2</li>
+      <li>Furskin_Heavy3</li>
+    </forcedHeadTypes>
+    <displayOrderInCategory>95</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>grunt</symbol></li>
+        <li><symbol>jaw</symbol></li>
+        <li><symbol>lug</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>grunt</symbol></li>
+        <li><symbol>jaw</symbol></li>
+        <li><symbol>lug</symbol></li>
+        <li><symbol>thal</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+	  <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Overlays/HeavyJaw/HeavyJaw</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <useSkinShader>false</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <baseLayer>51</baseLayer>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  
+    <GeneDef>
+    <defName>Brow_Heavy</defName>
+    <label>heavy brow</label>
+    <description>Carriers of this gene have a prominent brow.</description>
+    <biostatCpx>0</biostatCpx>
+    <displayCategory>Cosmetic</displayCategory>
+    <iconPath>UI/Icons/Genes/Gene_HeavyBrow</iconPath>
+    <displayOrderInCategory>100</displayOrderInCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/HeavyBrow/HeavyBrow</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <useSkinShader>false</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <baseLayer>51</baseLayer>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  
+</Defs>
