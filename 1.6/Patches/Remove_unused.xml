@@ -9,9 +9,9 @@
   
   <Operation Class="PatchOperationRemove">
     <xpath>/Defs/FacialAnimation.EyeballTypeDef[
-      defName="EyeSanpaku"or
-      defName="EyeDragon"or
-	  defName="EyeDull"]/.</xpath>
+      defName="EyeSanpaku" or
+      defName="EyeDragon" or
+      defName="EyeDull"]/.</xpath>
   </Operation>
   
   <Operation Class="PatchOperationRemove">
