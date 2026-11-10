@@ -13,3 +13,8 @@ Make sure to check out their other mods!
 
 **This version may be taken down per request from the original authors.**
 **The original authors are free to use this version to update their own.**
+
+## Changelog
+
+- **Nov. 09, 2026:** 1.7 compatibility update.
+    - Nals' mod works the same so no changes needed.

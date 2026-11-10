@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<GeneDef>
+<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>Furskin</defName>
     <label>furskin</label>
     <labelShortAdj>furskinned</labelShortAdj>
@@ -83,7 +83,7 @@
     </renderNodeProperties>
   </GeneDef>
   
-  <GeneDef ParentName="GeneJawBase">
+  <GeneDef ParentName="GeneJawBase" MayRequire="Ludeon.RimWorld.Biotech">
     <defName>Head_Gaunt</defName>
     <label>gaunt head</label>
     <description>Carriers of this gene have a pinched, gaunt appearance in their face and head.</description>
@@ -121,7 +121,7 @@
     </renderNodeProperties>
   </GeneDef>
   
-  <GeneDef ParentName="GeneJawBase">
+  <GeneDef ParentName="GeneJawBase" MayRequire="Ludeon.RimWorld.Biotech">
     <defName>Jaw_Heavy</defName>
     <label>heavy jaw</label>
     <description>Carriers of this gene have large jaws.</description>
@@ -167,7 +167,7 @@
     </renderNodeProperties>
   </GeneDef>
   
-    <GeneDef>
+  <GeneDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>Brow_Heavy</defName>
     <label>heavy brow</label>
     <description>Carriers of this gene have a prominent brow.</description>
